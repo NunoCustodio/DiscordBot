@@ -16,6 +16,7 @@ client.on('message', async (message) => {
     message.channel.send('pong');
   } else {
     if (message.content === 'flour?') {
+      message.channel.send('*sniff* cocaina');
       if (message.member.voice.channel) {
         const connection = await message.member.voice.channel.join();
         const dispatcher = connection.play('./sounds/coca.mp3');
